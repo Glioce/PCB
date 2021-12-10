@@ -19384,7 +19384,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="127.635" y="140.97" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="E$12" library="eca84" package="ROUND-3" value="" x="13.335" y="103.505" smashed="yes"/>
-<element name="E$13" library="eca84" package="ROUND-4" value="" x="108.204" y="44.069" smashed="yes" rot="MR0"/>
 <element name="E$14" library="eca84" package="ROUND-5" value="" x="121.285" y="45.339" smashed="yes"/>
 <element name="E$15" library="eca84" package="ROUND-6" value="" x="131.445" y="58.039" smashed="yes"/>
 <element name="IC7" library="eca84" package="DIL-16" value="" x="22.225" y="38.735" smashed="yes">
@@ -19606,6 +19605,11 @@ design rules under a new name.</description>
 <element name="E$161" library="eca84" package="ROUND-5" value="" x="194.945" y="55.245" smashed="yes"/>
 <element name="E$162" library="eca84" package="ROUND-5" value="" x="197.485" y="67.945" smashed="yes"/>
 <element name="E$163" library="eca84" package="ROUND-5" value="" x="154.305" y="45.085" smashed="yes"/>
+<element name="E$164" library="eca84" package="ROUND-1" value="" x="140.335" y="70.485" smashed="yes"/>
+<element name="E$165" library="eca84" package="ROUND-1" value="" x="136.525" y="37.465" smashed="yes"/>
+<element name="E$166" library="eca84" package="ROUND-5" value="" x="136.525" y="69.215" smashed="yes"/>
+<element name="E$167" library="eca84" package="ROUND-6" value="" x="106.045" y="57.785" smashed="yes"/>
+<element name="E$168" library="eca84" package="ROUND-3" value="" x="113.665" y="108.585" smashed="yes"/>
 </elements>
 <signals>
 <signal name="S$1">
@@ -19650,7 +19654,7 @@ design rules under a new name.</description>
 <contactref element="IC10" pad="P$13"/>
 <wire x1="26.035" y1="55.245" x2="26.035" y2="57.785" width="1.016" layer="1"/>
 </signal>
-<signal name="S$8">
+<signal name="VCC">
 <contactref element="IC7" pad="P$11"/>
 <wire x1="18.415" y1="34.925" x2="18.415" y2="36.195" width="1.016" layer="1"/>
 <contactref element="IC7" pad="P$3"/>
@@ -19690,6 +19694,27 @@ design rules under a new name.</description>
 <wire x1="29.845" y1="50.165" x2="32.385" y2="51.435" width="1.524" layer="1"/>
 <wire x1="34.925" y1="33.655" x2="32.385" y2="33.655" width="1.016" layer="1"/>
 <wire x1="31.115" y1="34.925" x2="32.385" y2="33.655" width="1.016" layer="1"/>
+<polygon width="0.508" layer="1">
+<vertex x="34.925" y="35.56"/>
+<vertex x="38.1" y="32.385"/>
+<vertex x="48.26" y="32.385"/>
+<vertex x="57.785" y="24.765"/>
+<vertex x="86.36" y="24.765"/>
+<vertex x="88.265" y="27.305"/>
+<vertex x="88.265" y="46.355"/>
+<vertex x="90.17" y="49.53"/>
+<vertex x="105.41" y="54.61"/>
+<vertex x="111.125" y="52.705"/>
+<vertex x="121.285" y="45.085"/>
+<vertex x="93.98" y="45.085"/>
+<vertex x="93.345" y="42.545"/>
+<vertex x="93.98" y="25.4"/>
+<vertex x="88.9" y="19.05"/>
+<vertex x="55.88" y="19.05"/>
+<vertex x="46.355" y="26.67"/>
+<vertex x="38.1" y="26.67"/>
+<vertex x="34.925" y="23.495"/>
+</polygon>
 </signal>
 <signal name="S$10">
 <contactref element="IC7" pad="P$12"/>
@@ -20286,6 +20311,37 @@ design rules under a new name.</description>
 <contactref element="IC15" pad="P$3"/>
 <wire x1="193.675" y1="24.765" x2="188.595" y2="29.845" width="1.016" layer="1"/>
 <wire x1="188.595" y1="29.845" x2="187.325" y2="29.845" width="1.016" layer="1"/>
+</signal>
+<signal name="S$48">
+<contactref element="IC15" pad="P$8"/>
+<contactref element="E$153" pad="P$1"/>
+<wire x1="194.945" y1="34.925" x2="194.945" y2="38.735" width="1.016" layer="1"/>
+<contactref element="E$152" pad="P$1"/>
+<wire x1="194.945" y1="38.735" x2="192.405" y2="41.275" width="1.778" layer="1"/>
+<wire x1="192.405" y1="41.275" x2="191.77" y2="41.91" width="1.778" layer="1"/>
+<wire x1="191.77" y1="41.91" x2="191.77" y2="50.8" width="1.778" layer="1"/>
+</signal>
+<signal name="S$49">
+<contactref element="E$106" pad="P$1"/>
+<wire x1="179.705" y1="36.195" x2="179.705" y2="34.29" width="0.6096" layer="1"/>
+<wire x1="179.705" y1="34.29" x2="175.26" y2="29.845" width="0.6096" layer="1"/>
+<contactref element="IC11" pad="P$1"/>
+<wire x1="175.26" y1="29.845" x2="170.815" y2="29.845" width="0.6096" layer="1"/>
+<contactref element="IC11" pad="P$2"/>
+<wire x1="168.275" y1="29.845" x2="170.815" y2="29.845" width="1.016" layer="1"/>
+</signal>
+<signal name="S$50">
+<contactref element="E$110" pad="P$1"/>
+<contactref element="E$109" pad="P$1"/>
+<wire x1="163.195" y1="33.655" x2="174.625" y2="37.465" width="1.778" layer="1"/>
+</signal>
+<signal name="S$51">
+<contactref element="E$164" pad="P$1"/>
+<wire x1="140.335" y1="70.485" x2="140.335" y2="66.675" width="1.27" layer="1"/>
+<contactref element="E$165" pad="P$1"/>
+<wire x1="140.335" y1="66.675" x2="135.89" y2="62.23" width="1.27" layer="1"/>
+<wire x1="135.89" y1="62.23" x2="135.89" y2="38.1" width="1.27" layer="1"/>
+<wire x1="135.89" y1="38.1" x2="136.525" y2="37.465" width="1.27" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
