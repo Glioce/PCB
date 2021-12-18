@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -18946,6 +18946,55 @@
 <package name="ROUND-1">
 <pad name="P$1" x="0" y="0" drill="0.9" diameter="1.778"/>
 </package>
+<package name="CON-ZIGZAG">
+<pad name="P$1" x="-6.35" y="-11.43" drill="1.3" diameter="2.54"/>
+<pad name="P$2" x="-1.27" y="-11.43" drill="1.3" diameter="2.54"/>
+<pad name="P$3" x="3.81" y="-11.43" drill="1.3" diameter="2.54"/>
+<pad name="P$4" x="-3.81" y="-8.89" drill="1.3" diameter="2.54"/>
+<pad name="P$5" x="1.27" y="-8.89" drill="1.3" diameter="2.54"/>
+<pad name="P$6" x="6.35" y="-8.89" drill="1.3" diameter="2.54"/>
+<pad name="P$7" x="-6.35" y="-6.35" drill="1.3" diameter="2.54"/>
+<pad name="P$8" x="-1.27" y="-6.35" drill="1.3" diameter="2.54"/>
+<pad name="P$9" x="3.81" y="-6.35" drill="1.3" diameter="2.54"/>
+<pad name="P$10" x="-3.81" y="-3.81" drill="1.3" diameter="2.54"/>
+<pad name="P$11" x="1.27" y="-3.81" drill="1.3" diameter="2.54"/>
+<pad name="P$12" x="6.35" y="-3.81" drill="1.3" diameter="2.54"/>
+<pad name="P$13" x="-6.35" y="8.89" drill="1.3" diameter="2.54"/>
+<pad name="P$14" x="-1.27" y="11.43" drill="1.3" diameter="2.54"/>
+<pad name="P$15" x="1.27" y="8.89" drill="1.3" diameter="2.54"/>
+<pad name="P$16" x="6.35" y="11.43" drill="1.3" diameter="2.54"/>
+<wire x1="-9.525" y1="13.335" x2="9.525" y2="13.335" width="0.127" layer="21"/>
+<wire x1="9.525" y1="13.335" x2="9.525" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="9.525" y1="-16.51" x2="-9.525" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-9.525" y1="-16.51" x2="-9.525" y2="13.335" width="0.127" layer="21"/>
+<text x="-2.54" y="-19.05" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="CON-2X2">
+<pad name="P$1" x="-2.1" y="-2.1" drill="1.3" diameter="2.54"/>
+<pad name="P$2" x="2.1" y="-2.1" drill="1.3" diameter="2.54"/>
+<pad name="P$3" x="-2.1" y="2.1" drill="1.3" diameter="2.54"/>
+<pad name="P$4" x="2.1" y="2.1" drill="1.3" diameter="2.54"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="1.905" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.905" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5.08" x2="1.905" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-5.08" x2="-1.905" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-5.08" x2="-5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="8.89" y2="1.905" width="0.127" layer="21"/>
+<wire x1="8.89" y1="1.905" x2="8.89" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-1.905" x2="5.08" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-8.89" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="1.905" x2="-8.89" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-1.905" x2="-5.08" y2="-1.905" width="0.127" layer="21"/>
+<text x="-4.445" y="-6.985" size="1.27" layer="21">1</text>
+<wire x1="-1.905" y1="-5.08" x2="-1.905" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-5.08" x2="1.905" y2="-6.35" width="0.127" layer="21"/>
+<text x="5.715" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="40xx" urn="urn:adsk.eagle:library:80">
@@ -19610,6 +19659,12 @@ design rules under a new name.</description>
 <element name="E$166" library="eca84" package="ROUND-5" value="" x="136.525" y="69.215" smashed="yes"/>
 <element name="E$167" library="eca84" package="ROUND-6" value="" x="106.045" y="57.785" smashed="yes"/>
 <element name="E$168" library="eca84" package="ROUND-3" value="" x="113.665" y="108.585" smashed="yes"/>
+<element name="CR1" library="eca84" package="CON-ZIGZAG" value="" x="211.455" y="33.655" smashed="yes">
+<attribute name="NAME" x="208.915" y="14.605" size="1.27" layer="25"/>
+</element>
+<element name="E$13" library="eca84" package="CON-2X2" value="" x="121.92" y="99.06" smashed="yes">
+<attribute name="NAME" x="127.635" y="102.235" size="1.27" layer="25"/>
+</element>
 </elements>
 <signals>
 <signal name="S$2">
@@ -20550,6 +20605,26 @@ design rules under a new name.</description>
 <contactref element="E$41" pad="P$1"/>
 <wire x1="29.845" y1="8.255" x2="27.305" y2="5.715" width="1.778" layer="16"/>
 </signal>
+<signal name="S$63">
+<contactref element="IC19" pad="P$8"/>
+<wire x1="59.055" y1="94.615" x2="59.055" y2="95.885" width="1.27" layer="16"/>
+<wire x1="60.325" y1="93.345" x2="59.055" y2="94.615" width="1.27" layer="16"/>
+<contactref element="IC19" pad="P$4"/>
+<wire x1="69.215" y1="95.885" x2="69.215" y2="93.345" width="1.27" layer="16"/>
+<wire x1="69.215" y1="93.345" x2="60.325" y2="93.345" width="1.27" layer="16"/>
+<contactref element="IC19" pad="P$13"/>
+<wire x1="69.215" y1="88.265" x2="69.215" y2="93.345" width="1.27" layer="16"/>
+<contactref element="IC18" pad="P$13"/>
+<contactref element="IC18" pad="P$4"/>
+<wire x1="69.215" y1="80.645" x2="69.215" y2="76.835" width="1.27" layer="16"/>
+<wire x1="69.215" y1="76.835" x2="69.215" y2="73.025" width="1.27" layer="16"/>
+<wire x1="61.595" y1="76.835" x2="69.215" y2="76.835" width="1.27" layer="16"/>
+<wire x1="59.055" y1="79.375" x2="61.595" y2="76.835" width="1.27" layer="16"/>
+<contactref element="IC18" pad="P$8"/>
+<wire x1="59.055" y1="80.645" x2="59.055" y2="79.375" width="1.27" layer="16"/>
+<wire x1="54.61" y1="80.645" x2="59.055" y2="80.645" width="1.27" layer="16"/>
+<wire x1="69.215" y1="80.645" x2="69.215" y2="88.265" width="0" layer="19" extent="1-1"/>
+</signal>
 <signal name="GND">
 <contactref element="E$50" pad="P$1"/>
 <contactref element="E$51" pad="P$1"/>
@@ -20578,25 +20653,18 @@ design rules under a new name.</description>
 <wire x1="13.335" y1="99.695" x2="8.89" y2="99.695" width="2.54" layer="16"/>
 <wire x1="3.81" y1="94.615" x2="3.81" y2="90.805" width="2.54" layer="16"/>
 <wire x1="52.705" y1="14.605" x2="50.165" y2="10.795" width="2.54" layer="16"/>
-<contactref element="E$18" pad="P$7"/>
-<contactref element="E$92" pad="P$1"/>
-<contactref element="E$10" pad="P$7"/>
-<contactref element="E$2" pad="P$7"/>
-<contactref element="IC19" pad="P$8"/>
-<contactref element="IC19" pad="P$4"/>
-<contactref element="IC19" pad="P$13"/>
 <polygon width="0.254" layer="16" thermals="no">
 <vertex x="41.91" y="87.63"/>
-<vertex x="45.72" y="83.82"/>
-<vertex x="50.8" y="83.82"/>
+<vertex x="46.355" y="83.185"/>
+<vertex x="50.165" y="83.185"/>
 <vertex x="53.34" y="86.36"/>
 <vertex x="53.34" y="90.805"/>
 <vertex x="58.42" y="95.885"/>
 <vertex x="60.96" y="93.345"/>
 <vertex x="56.515" y="88.9"/>
 <vertex x="56.515" y="31.75"/>
-<vertex x="54.61" y="31.75"/>
-<vertex x="52.705" y="33.655"/>
+<vertex x="53.975" y="31.75"/>
+<vertex x="52.705" y="33.02"/>
 <vertex x="52.705" y="64.77"/>
 <vertex x="50.8" y="66.675"/>
 <vertex x="46.355" y="66.675"/>
@@ -20621,25 +20689,41 @@ design rules under a new name.</description>
 <vertex x="2.54" y="17.78"/>
 <vertex x="2.54" y="53.34"/>
 </polygon>
+<polygon width="0.254" layer="16" thermals="no">
+<vertex x="86.36" y="93.98"/>
+<vertex x="90.17" y="93.98"/>
+<vertex x="90.17" y="69.85"/>
+<vertex x="86.36" y="69.85"/>
+</polygon>
+<polygon width="0.254" layer="16" thermals="no">
+<vertex x="93.98" y="93.98"/>
+<vertex x="97.79" y="93.98"/>
+<vertex x="97.79" y="69.85"/>
+<vertex x="93.98" y="69.85"/>
+</polygon>
+<polygon width="0.254" layer="16" thermals="no">
+<vertex x="101.6" y="93.98"/>
+<vertex x="105.41" y="93.98"/>
+<vertex x="105.41" y="69.85"/>
+<vertex x="101.6" y="69.85"/>
+</polygon>
+<contactref element="E$92" pad="P$1"/>
+<contactref element="E$2" pad="P$7"/>
+<wire x1="59.055" y1="65.405" x2="54.61" y2="65.405" width="1.27" layer="16"/>
+<contactref element="E$10" pad="P$7"/>
 <wire x1="59.055" y1="50.165" x2="54.61" y2="50.165" width="1.524" layer="16"/>
-<wire x1="59.055" y1="65.405" x2="54.61" y2="65.405" width="1.524" layer="16"/>
+<wire x1="84.455" y1="27.305" x2="79.375" y2="32.385" width="1.778" layer="16"/>
+<wire x1="79.375" y1="32.385" x2="55.88" y2="32.385" width="1.778" layer="16"/>
+<contactref element="E$18" pad="P$7"/>
 <wire x1="59.055" y1="34.925" x2="54.61" y2="34.925" width="1.524" layer="16"/>
-<contactref element="IC18" pad="P$4"/>
-<contactref element="IC18" pad="P$13"/>
-<contactref element="IC18" pad="P$8"/>
-<wire x1="69.215" y1="80.645" x2="69.215" y2="76.835" width="1.27" layer="16"/>
-<wire x1="69.215" y1="76.835" x2="69.215" y2="73.025" width="1.27" layer="16"/>
-<wire x1="59.055" y1="80.645" x2="59.055" y2="79.375" width="1.27" layer="16"/>
-<wire x1="59.055" y1="79.375" x2="61.595" y2="76.835" width="1.27" layer="16"/>
-<wire x1="61.595" y1="76.835" x2="69.215" y2="76.835" width="1.27" layer="16"/>
-<wire x1="59.055" y1="80.645" x2="54.61" y2="80.645" width="1.27" layer="16"/>
-<wire x1="69.215" y1="95.885" x2="69.215" y2="93.345" width="1.27" layer="16"/>
-<wire x1="69.215" y1="88.265" x2="69.215" y2="93.345" width="1.27" layer="16"/>
-<wire x1="69.215" y1="93.345" x2="60.325" y2="93.345" width="1.27" layer="16"/>
-<wire x1="60.325" y1="93.345" x2="59.055" y2="94.615" width="1.27" layer="16"/>
-<wire x1="59.055" y1="94.615" x2="59.055" y2="95.885" width="1.27" layer="16"/>
-<wire x1="59.055" y1="34.925" x2="84.455" y2="27.305" width="0" layer="19" extent="1-1"/>
-<wire x1="13.335" y1="95.885" x2="13.335" y2="103.505" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="16" thermals="no">
+<vertex x="53.975" y="71.12"/>
+<vertex x="82.55" y="71.12"/>
+<vertex x="82.55" y="67.31"/>
+<vertex x="53.975" y="67.31"/>
+</polygon>
+<wire x1="54.61" y1="65.405" x2="54.61" y2="69.215" width="1.27" layer="16"/>
+<wire x1="13.335" y1="103.505" x2="13.335" y2="95.885" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="S$64">
 <contactref element="E$65" pad="P$1"/>
