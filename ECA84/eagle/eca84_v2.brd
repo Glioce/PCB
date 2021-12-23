@@ -8,7 +8,7 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,16 +23,16 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -73,15 +73,15 @@
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="topRef" color="22" fill="1" visible="no" active="yes"/>
 <layer number="101" name="bottomRef" color="3" fill="1" visible="no" active="yes"/>
-<layer number="102" name="holeRef" color="23" fill="1" visible="no" active="yes"/>
+<layer number="102" name="holeRef" color="23" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="viaRef" color="10" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="127" x2="223" y2="127" width="0.1" layer="20"/>
-<wire x1="223" y1="127" x2="223" y2="0.000009375" width="0.1" layer="20"/>
-<wire x1="223" y1="0.000009375" x2="0" y2="0.000009375" width="0.1" layer="20"/>
-<wire x1="0" y1="0.000009375" x2="0" y2="127" width="0.1" layer="20"/>
+<wire x1="0" y1="127" x2="222.885" y2="127" width="0.1" layer="20"/>
+<wire x1="222.885" y1="127" x2="222.885" y2="0" width="0.1" layer="20"/>
+<wire x1="222.885" y1="0" x2="0" y2="0" width="0.1" layer="20"/>
+<wire x1="0" y1="0" x2="0" y2="127" width="0.1" layer="20"/>
 <wire x1="173.162" y1="86.0664" x2="172.6" y2="85.8245" width="0.1" layer="101"/>
 <wire x1="172.6" y1="85.8245" x2="172.373" y2="85.2559" width="0.1" layer="101"/>
 <wire x1="172.373" y1="85.2559" x2="172.616" y2="84.6928" width="0.1" layer="101"/>
@@ -18087,6 +18087,40 @@
 <hole x="217.805" y="4.445" drill="3.556"/>
 <text x="11.43" y="116.84" size="2.54" layer="25">PIELTEX 2021
 TEPETZINGO</text>
+<dimension x1="-0.635" y1="127" x2="-0.635" y2="121.285" x3="-0.635" y3="124.1425" textsize="1.778" layer="20"/>
+<dimension x1="-1.905" y1="121.285" x2="-1.905" y2="62.865" x3="-1.905" y3="92.075" textsize="1.778" layer="20"/>
+<dimension x1="-0.635" y1="0" x2="-0.635" y2="4.445" x3="-0.635" y3="2.2225" textsize="1.778" layer="20"/>
+<dimension x1="-3.81" y1="5.08" x2="-3.81" y2="62.865" x3="-3.81" y3="33.9725" textsize="1.778" layer="20"/>
+<dimension x1="9.525" y1="127" x2="9.525" y2="62.865" x3="9.525" y3="94.9325" textsize="1.778" layer="20"/>
+<dimension x1="9.525" y1="62.865" x2="9.525" y2="0" x3="9.525" y3="31.4325" textsize="1.778" layer="20"/>
+<dimension x1="0" y1="127.635" x2="4.445" y2="127.635" x3="2.2225" y3="127.635" textsize="1.778" layer="20"/>
+<dimension x1="0" y1="-3.175" x2="4.445" y2="-3.175" x3="2.2225" y3="-3.175" textsize="1.778" layer="20"/>
+<dimension x1="95.885" y1="106.045" x2="0" y2="106.045" x3="47.9425" y3="106.045" textsize="1.778" layer="20"/>
+<dimension x1="92.71" y1="103.505" x2="92.71" y2="127" x3="92.71" y3="115.2525" textsize="1.778" layer="20"/>
+<dimension x1="95.885" y1="106.045" x2="141.605" y2="106.045" x3="118.745" y3="106.045" textsize="1.778" layer="20"/>
+<dimension x1="141.605" y1="106.045" x2="222.885" y2="106.045" x3="182.245" y3="106.045" textsize="1.778" layer="20"/>
+<dimension x1="92.71" y1="103.505" x2="92.71" y2="57.785" x3="92.71" y3="80.645" textsize="1.778" layer="20"/>
+<dimension x1="95.885" y1="55.245" x2="0" y2="55.245" x3="47.9425" y3="55.245" textsize="1.778" layer="20"/>
+<dimension x1="95.885" y1="55.245" x2="141.605" y2="55.245" x3="118.745" y3="55.245" textsize="1.778" layer="20"/>
+<dimension x1="141.605" y1="55.245" x2="222.885" y2="55.245" x3="182.245" y3="55.245" textsize="1.778" layer="20"/>
+<dimension x1="92.71" y1="57.785" x2="92.71" y2="0" x3="92.71" y3="28.8925" textsize="1.778" layer="20"/>
+<dimension x1="114.3" y1="5.08" x2="114.3" y2="0" x3="114.3" y3="2.54" textsize="1.778" layer="20"/>
+<dimension x1="144.78" y1="103.505" x2="144.78" y2="127" x3="144.78" y3="115.2525" textsize="1.778" layer="20"/>
+<dimension x1="144.78" y1="103.505" x2="144.78" y2="57.785" x3="144.78" y3="80.645" textsize="1.778" layer="20"/>
+<dimension x1="144.78" y1="57.785" x2="144.78" y2="0" x3="144.78" y3="28.8925" textsize="1.778" layer="20"/>
+<dimension x1="111.125" y1="-3.81" x2="222.885" y2="-3.81" x3="167.005" y3="-3.81" textsize="1.778" layer="20"/>
+<dimension x1="111.125" y1="-3.81" x2="0" y2="-3.81" x3="55.5625" y3="-3.81" textsize="1.778" layer="20"/>
+<dimension x1="217.805" y1="-1.27" x2="222.885" y2="-1.27" x3="220.345" y3="-1.27" textsize="1.778" layer="20"/>
+<dimension x1="224.155" y1="0" x2="224.155" y2="4.445" x3="224.155" y3="2.2225" textsize="1.778" layer="20"/>
+<dimension x1="225.425" y1="4.445" x2="225.425" y2="62.865" x3="225.425" y3="33.655" textsize="1.778" layer="20"/>
+<dimension x1="225.425" y1="62.865" x2="225.425" y2="121.285" x3="225.425" y3="92.075" textsize="1.778" layer="20"/>
+<dimension x1="225.425" y1="121.285" x2="225.425" y2="127" x3="225.425" y3="124.1425" textsize="1.778" layer="20"/>
+<dimension x1="4.445" y1="59.69" x2="0" y2="59.69" x3="2.2225" y3="59.69" textsize="1.778" layer="20"/>
+<dimension x1="217.805" y1="59.69" x2="222.885" y2="59.69" x3="220.345" y3="59.69" textsize="1.778" layer="20"/>
+<dimension x1="218.44" y1="118.745" x2="222.885" y2="118.745" x3="220.6625" y3="118.745" textsize="1.778" layer="20"/>
+<dimension x1="218.44" y1="128.27" x2="222.885" y2="128.27" x3="220.6625" y3="128.27" textsize="1.778" layer="20"/>
+<dimension x1="213.36" y1="127" x2="213.36" y2="62.865" x3="213.36" y3="94.9325" textsize="1.778" layer="20"/>
+<dimension x1="213.36" y1="62.865" x2="213.36" y2="0" x3="213.36" y3="31.4325" textsize="1.778" layer="20"/>
 </plain>
 <libraries>
 <library name="eca84">
