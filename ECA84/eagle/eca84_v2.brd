@@ -73,7 +73,7 @@
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="topRef" color="22" fill="1" visible="no" active="yes"/>
 <layer number="101" name="bottomRef" color="3" fill="1" visible="no" active="yes"/>
-<layer number="102" name="holeRef" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="holeRef" color="23" fill="1" visible="no" active="yes"/>
 <layer number="103" name="viaRef" color="10" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
@@ -18074,27 +18074,27 @@
 <wire x1="7.94021875" y1="92.692590625" x2="8.03443125" y2="92.46665" width="0.1" layer="103"/>
 <wire x1="8.03443125" y1="92.46665" x2="8.00305" y2="92.22388125" width="0.1" layer="103"/>
 <wire x1="8.00305" y1="92.22388125" x2="7.854490625" y2="92.02931875" width="0.1" layer="103"/>
-<hole x="4.445" y="121.285" drill="3.556"/>
-<hole x="4.445" y="62.865" drill="3.556"/>
-<hole x="4.445" y="4.445" drill="3.556"/>
-<hole x="111.125" y="5.08" drill="3.556"/>
-<hole x="95.885" y="57.785" drill="3.556"/>
-<hole x="141.605" y="57.785" drill="3.556"/>
-<hole x="141.605" y="103.505" drill="3.556"/>
-<hole x="95.885" y="103.505" drill="3.556"/>
-<hole x="218.44" y="121.285" drill="3.556"/>
-<hole x="217.805" y="62.865" drill="3.556"/>
-<hole x="217.805" y="4.445" drill="3.556"/>
+<hole x="5.08" y="121.92" drill="4.064"/>
+<hole x="5.08" y="63.5" drill="4.064"/>
+<hole x="5.08" y="5.08" drill="4.064"/>
+<hole x="111.76" y="5.08" drill="4.064"/>
+<hole x="95.885" y="57.785" drill="4.064"/>
+<hole x="141.605" y="57.785" drill="4.064"/>
+<hole x="141.605" y="103.505" drill="4.064"/>
+<hole x="95.885" y="103.505" drill="4.064"/>
+<hole x="217.805" y="121.92" drill="4.064"/>
+<hole x="217.805" y="63.5" drill="4.064"/>
+<hole x="217.805" y="5.08" drill="4.064"/>
 <text x="11.43" y="116.84" size="2.54" layer="25">PIELTEX 2021
 TEPETZINGO</text>
-<dimension x1="-0.635" y1="127" x2="-0.635" y2="121.285" x3="-0.635" y3="124.1425" textsize="1.778" layer="20"/>
-<dimension x1="-1.905" y1="121.285" x2="-1.905" y2="62.865" x3="-1.905" y3="92.075" textsize="1.778" layer="20"/>
-<dimension x1="-0.635" y1="0" x2="-0.635" y2="4.445" x3="-0.635" y3="2.2225" textsize="1.778" layer="20"/>
-<dimension x1="-3.81" y1="5.08" x2="-3.81" y2="62.865" x3="-3.81" y3="33.9725" textsize="1.778" layer="20"/>
+<dimension x1="-0.635" y1="127" x2="-0.635" y2="121.92" x3="-0.635" y3="124.46" textsize="1.778" layer="20"/>
+<dimension x1="-1.905" y1="121.92" x2="-1.905" y2="63.5" x3="-1.905" y3="92.71" textsize="1.778" layer="20"/>
+<dimension x1="-0.635" y1="0" x2="-0.635" y2="5.08" x3="-0.635" y3="2.54" textsize="1.778" layer="20"/>
+<dimension x1="-3.81" y1="5.08" x2="-3.81" y2="63.5" x3="-3.81" y3="34.29" textsize="1.778" layer="20"/>
 <dimension x1="9.525" y1="127" x2="9.525" y2="62.865" x3="9.525" y3="94.9325" textsize="1.778" layer="20"/>
 <dimension x1="9.525" y1="62.865" x2="9.525" y2="0" x3="9.525" y3="31.4325" textsize="1.778" layer="20"/>
-<dimension x1="0" y1="127.635" x2="4.445" y2="127.635" x3="2.2225" y3="127.635" textsize="1.778" layer="20"/>
-<dimension x1="0" y1="-3.175" x2="4.445" y2="-3.175" x3="2.2225" y3="-3.175" textsize="1.778" layer="20"/>
+<dimension x1="0" y1="128.27" x2="5.08" y2="128.27" x3="2.54" y3="128.27" textsize="1.778" layer="20"/>
+<dimension x1="0" y1="-3.175" x2="5.08" y2="-3.175" x3="2.54" y3="-3.175" textsize="1.778" layer="20"/>
 <dimension x1="95.885" y1="106.045" x2="0" y2="106.045" x3="47.9425" y3="106.045" textsize="1.778" layer="20"/>
 <dimension x1="92.71" y1="103.505" x2="92.71" y2="127" x3="92.71" y3="115.2525" textsize="1.778" layer="20"/>
 <dimension x1="95.885" y1="106.045" x2="141.605" y2="106.045" x3="118.745" y3="106.045" textsize="1.778" layer="20"/>
@@ -18111,14 +18111,14 @@ TEPETZINGO</text>
 <dimension x1="111.125" y1="-3.81" x2="222.885" y2="-3.81" x3="167.005" y3="-3.81" textsize="1.778" layer="20"/>
 <dimension x1="111.125" y1="-3.81" x2="0" y2="-3.81" x3="55.5625" y3="-3.81" textsize="1.778" layer="20"/>
 <dimension x1="217.805" y1="-1.27" x2="222.885" y2="-1.27" x3="220.345" y3="-1.27" textsize="1.778" layer="20"/>
-<dimension x1="224.155" y1="0" x2="224.155" y2="4.445" x3="224.155" y3="2.2225" textsize="1.778" layer="20"/>
-<dimension x1="225.425" y1="4.445" x2="225.425" y2="62.865" x3="225.425" y3="33.655" textsize="1.778" layer="20"/>
-<dimension x1="225.425" y1="62.865" x2="225.425" y2="121.285" x3="225.425" y3="92.075" textsize="1.778" layer="20"/>
-<dimension x1="225.425" y1="121.285" x2="225.425" y2="127" x3="225.425" y3="124.1425" textsize="1.778" layer="20"/>
-<dimension x1="4.445" y1="59.69" x2="0" y2="59.69" x3="2.2225" y3="59.69" textsize="1.778" layer="20"/>
+<dimension x1="221.615" y1="0" x2="221.615" y2="5.08" x3="221.615" y3="2.54" textsize="1.778" layer="20"/>
+<dimension x1="225.425" y1="5.08" x2="225.425" y2="63.5" x3="225.425" y3="34.29" textsize="1.778" layer="20"/>
+<dimension x1="225.425" y1="63.5" x2="225.425" y2="121.92" x3="225.425" y3="92.71" textsize="1.778" layer="20"/>
+<dimension x1="221.615" y1="121.92" x2="221.615" y2="127" x3="221.615" y3="124.46" textsize="1.778" layer="20"/>
+<dimension x1="5.08" y1="59.69" x2="0" y2="59.69" x3="2.54" y3="59.69" textsize="1.778" layer="20"/>
 <dimension x1="217.805" y1="59.69" x2="222.885" y2="59.69" x3="220.345" y3="59.69" textsize="1.778" layer="20"/>
 <dimension x1="218.44" y1="118.745" x2="222.885" y2="118.745" x3="220.6625" y3="118.745" textsize="1.778" layer="20"/>
-<dimension x1="218.44" y1="128.27" x2="222.885" y2="128.27" x3="220.6625" y3="128.27" textsize="1.778" layer="20"/>
+<dimension x1="217.805" y1="128.27" x2="222.885" y2="128.27" x3="220.345" y3="128.27" textsize="1.778" layer="20"/>
 <dimension x1="213.36" y1="127" x2="213.36" y2="62.865" x3="213.36" y3="94.9325" textsize="1.778" layer="20"/>
 <dimension x1="213.36" y1="62.865" x2="213.36" y2="0" x3="213.36" y3="31.4325" textsize="1.778" layer="20"/>
 </plain>
