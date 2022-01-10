@@ -18131,6 +18131,10 @@ TEPETZINGO</text>
 <text x="215.265" y="67.945" size="1.27" layer="25">R2</text>
 <text x="216.535" y="74.93" size="1.27" layer="25">R2</text>
 <text x="200.025" y="80.01" size="1.27" layer="25">C2</text>
+<text x="180.975" y="109.855" size="1.27" layer="25">R3</text>
+<text x="171.45" y="101.6" size="1.27" layer="25">Q1</text>
+<text x="177.165" y="121.285" size="1.27" layer="25">R23</text>
+<text x="167.005" y="116.84" size="1.27" layer="25">R21</text>
 </plain>
 <libraries>
 <library name="eca84">

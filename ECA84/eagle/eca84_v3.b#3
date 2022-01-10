@@ -18171,6 +18171,7 @@ TEPETZINGO</text>
 <text x="109.855" y="107.95" size="1.27" layer="25">R8</text>
 <text x="83.82" y="107.315" size="1.27" layer="25">R24</text>
 <text x="79.375" y="106.045" size="1.27" layer="25">R22</text>
+<text x="12.7" y="45.72" size="1.27" layer="25">C4</text>
 </plain>
 <libraries>
 <library name="eca84">
