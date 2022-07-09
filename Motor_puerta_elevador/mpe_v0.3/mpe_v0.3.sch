@@ -329,12 +329,12 @@ $EndComp
 $Comp
 L power:Earth #PWR0102
 U 1 1 62C8B8C8
-P 1600 1950
-F 0 "#PWR0102" H 1600 1700 50  0001 C CNN
-F 1 "Earth" H 1600 1800 50  0001 C CNN
-F 2 "" H 1600 1950 50  0001 C CNN
-F 3 "~" H 1600 1950 50  0001 C CNN
-	1    1600 1950
+P 1350 1850
+F 0 "#PWR0102" H 1350 1600 50  0001 C CNN
+F 1 "Earth" H 1350 1700 50  0001 C CNN
+F 2 "" H 1350 1850 50  0001 C CNN
+F 3 "~" H 1350 1850 50  0001 C CNN
+	1    1350 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -458,12 +458,12 @@ $EndComp
 $Comp
 L power:+24V #PWR0106
 U 1 1 62CA08BC
-P 1650 1700
-F 0 "#PWR0106" H 1650 1550 50  0001 C CNN
-F 1 "+24V" H 1665 1873 50  0000 C CNN
-F 2 "" H 1650 1700 50  0001 C CNN
-F 3 "" H 1650 1700 50  0001 C CNN
-	1    1650 1700
+P 1350 1200
+F 0 "#PWR0106" H 1350 1050 50  0001 C CNN
+F 1 "+24V" H 1365 1373 50  0000 C CNN
+F 2 "" H 1350 1200 50  0001 C CNN
+F 3 "" H 1350 1200 50  0001 C CNN
+	1    1350 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -667,7 +667,7 @@ F 1 "IN1" H 1500 4700 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1350 4650 50  0001 C CNN
 F 3 "~" H 1350 4650 50  0001 C CNN
 	1    1350 4650
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+24V #PWR0110
@@ -692,24 +692,6 @@ F 3 "~" H 1600 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 J6
-U 1 1 62DEB939
-P 1350 5200
-F 0 "J6" H 1500 5150 50  0000 C CNN
-F 1 "IN1" H 1500 5250 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1350 5200 50  0001 C CNN
-F 3 "~" H 1350 5200 50  0001 C CNN
-	1    1350 5200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 4750 1600 4750
-Wire Wire Line
-	1550 5300 1600 5300
-Connection ~ 1600 5300
-Wire Wire Line
-	1600 5300 1600 5850
-$Comp
 L Connector:Screw_Terminal_01x03 J7
 U 1 1 62CB0A69
 P 1350 5750
@@ -729,7 +711,7 @@ F 1 "IN1" H 1500 6350 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1350 6300 50  0001 C CNN
 F 3 "~" H 1350 6300 50  0001 C CNN
 	1    1350 6300
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x03 J9
@@ -740,33 +722,14 @@ F 1 "IN1" H 1500 6900 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1350 6850 50  0001 C CNN
 F 3 "~" H 1350 6850 50  0001 C CNN
 	1    1350 6850
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1550 4550 1700 4550
-Wire Wire Line
-	1700 4550 1700 4400
 Wire Wire Line
 	1550 4650 1800 4650
 Wire Wire Line
 	1800 4650 1800 4550
 Wire Wire Line
 	1800 4550 1850 4550
-Wire Wire Line
-	1550 5850 1600 5850
-Connection ~ 1600 5850
-Wire Wire Line
-	1600 5850 1600 6400
-Wire Wire Line
-	1550 6400 1600 6400
-Connection ~ 1600 6400
-Wire Wire Line
-	1600 6400 1600 6950
-Wire Wire Line
-	1550 6950 1600 6950
-Connection ~ 1600 6950
-Wire Wire Line
-	1600 6950 1600 7100
 $Comp
 L power:Earth #PWR0112
 U 1 1 62CEEE16
@@ -802,26 +765,6 @@ Wire Wire Line
 Connection ~ 2150 6950
 Wire Wire Line
 	2150 6950 2150 6400
-Wire Wire Line
-	1550 6750 1700 6750
-Wire Wire Line
-	1700 6750 1700 6200
-Connection ~ 1700 4550
-Wire Wire Line
-	1550 5100 1700 5100
-Connection ~ 1700 5100
-Wire Wire Line
-	1700 5100 1700 4550
-Wire Wire Line
-	1550 5650 1700 5650
-Connection ~ 1700 5650
-Wire Wire Line
-	1700 5650 1700 5100
-Wire Wire Line
-	1550 6200 1700 6200
-Connection ~ 1700 6200
-Wire Wire Line
-	1700 6200 1700 5650
 $Comp
 L Device:R_Small R3
 U 1 1 62D2902A
@@ -898,8 +841,6 @@ Wire Wire Line
 	1800 6750 1850 6750
 Wire Wire Line
 	2050 6750 2200 6750
-Wire Wire Line
-	1600 4750 1600 5300
 $Comp
 L Device:R_Small R8
 U 1 1 62D9BFF0
@@ -984,4 +925,219 @@ Wire Wire Line
 	2950 5650 2950 5600
 Wire Wire Line
 	2950 5400 2950 5350
+Wire Wire Line
+	1700 4400 1700 4550
+Wire Wire Line
+	1600 4750 1600 5300
+$Comp
+L Connector:Screw_Terminal_01x03 J6
+U 1 1 62DEB939
+P 1350 5200
+F 0 "J6" H 1500 5150 50  0000 C CNN
+F 1 "IN1" H 1500 5250 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 1350 5200 50  0001 C CNN
+F 3 "~" H 1350 5200 50  0001 C CNN
+	1    1350 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 4550 1700 4550
+Connection ~ 1700 4550
+Wire Wire Line
+	1700 4550 1700 5100
+Wire Wire Line
+	1550 4750 1600 4750
+Wire Wire Line
+	1550 5100 1700 5100
+Connection ~ 1700 5100
+Wire Wire Line
+	1700 5100 1700 5650
+Wire Wire Line
+	1550 5300 1600 5300
+Connection ~ 1600 5300
+Wire Wire Line
+	1600 5300 1600 5850
+Wire Wire Line
+	1550 5650 1700 5650
+Connection ~ 1700 5650
+Wire Wire Line
+	1700 5650 1700 6200
+Wire Wire Line
+	1550 5850 1600 5850
+Connection ~ 1600 5850
+Wire Wire Line
+	1600 5850 1600 6400
+Wire Wire Line
+	1550 6200 1700 6200
+Connection ~ 1700 6200
+Wire Wire Line
+	1700 6200 1700 6750
+Wire Wire Line
+	1550 6400 1600 6400
+Connection ~ 1600 6400
+Wire Wire Line
+	1600 6400 1600 6950
+Wire Wire Line
+	1550 6750 1700 6750
+Wire Wire Line
+	1550 6950 1600 6950
+Connection ~ 1600 6950
+Wire Wire Line
+	1600 6950 1600 7100
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 62CA1F80
+P 1650 1250
+F 0 "J11" H 1850 1250 50  0000 L CNN
+F 1 "IN+" H 1700 1250 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1650 1250 50  0001 C CNN
+F 3 "~" H 1650 1250 50  0001 C CNN
+	1    1650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J14
+U 1 1 62CA2506
+P 1650 1800
+F 0 "J14" H 1850 1800 50  0000 L CNN
+F 1 "IN-" H 1700 1800 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1650 1800 50  0001 C CNN
+F 3 "~" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J15
+U 1 1 62CA27F3
+P 2500 1250
+F 0 "J15" H 2850 1250 50  0000 C CNN
+F 1 "OUT+" H 2650 1250 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2500 1250 50  0001 C CNN
+F 3 "~" H 2500 1250 50  0001 C CNN
+	1    2500 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J18
+U 1 1 62CA2B2F
+P 2500 1800
+F 0 "J18" H 2850 1800 50  0000 C CNN
+F 1 "OUT-" H 2650 1800 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2500 1800 50  0001 C CNN
+F 3 "~" H 2500 1800 50  0001 C CNN
+	1    2500 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 1200 1350 1250
+Wire Wire Line
+	1350 1250 1450 1250
+Wire Wire Line
+	1350 1850 1350 1800
+Wire Wire Line
+	1350 1800 1450 1800
+Wire Notes Line
+	1550 1150 2600 1150
+Wire Notes Line
+	2600 1150 2600 1900
+Wire Notes Line
+	2600 1900 1550 1900
+Wire Notes Line
+	1550 1150 1550 1900
+Text Notes 1950 1550 0    50   ~ 0
+DC-DC
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 62D0AAC3
+P 1650 1400
+F 0 "J12" H 1850 1400 50  0000 L CNN
+F 1 "IN+" H 1700 1400 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1650 1400 50  0001 C CNN
+F 3 "~" H 1650 1400 50  0001 C CNN
+	1    1650 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 62D18E9D
+P 1650 1650
+F 0 "J13" H 1850 1650 50  0000 L CNN
+F 1 "IN-" H 1700 1650 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 1650 1650 50  0001 C CNN
+F 3 "~" H 1650 1650 50  0001 C CNN
+	1    1650 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1400 1350 1400
+Wire Wire Line
+	1350 1400 1350 1250
+Connection ~ 1350 1250
+Wire Wire Line
+	1450 1650 1350 1650
+Wire Wire Line
+	1350 1650 1350 1800
+Connection ~ 1350 1800
+$Comp
+L Connector_Generic:Conn_01x01 J16
+U 1 1 62D3FE52
+P 2500 1400
+F 0 "J16" H 2850 1400 50  0000 C CNN
+F 1 "OUT+" H 2650 1400 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2500 1400 50  0001 C CNN
+F 3 "~" H 2500 1400 50  0001 C CNN
+	1    2500 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J17
+U 1 1 62D40146
+P 2500 1650
+F 0 "J17" H 2850 1650 50  0000 C CNN
+F 1 "OUT-" H 2650 1650 50  0000 C CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 2500 1650 50  0001 C CNN
+F 3 "~" H 2500 1650 50  0001 C CNN
+	1    2500 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0116
+U 1 1 62D84D17
+P 2800 1200
+F 0 "#PWR0116" H 2800 1050 50  0001 C CNN
+F 1 "+5V" H 2815 1373 50  0000 C CNN
+F 2 "" H 2800 1200 50  0001 C CNN
+F 3 "" H 2800 1200 50  0001 C CNN
+	1    2800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 62D85583
+P 2800 1850
+F 0 "#PWR0117" H 2800 1600 50  0001 C CNN
+F 1 "GND" H 2805 1677 50  0000 C CNN
+F 2 "" H 2800 1850 50  0001 C CNN
+F 3 "" H 2800 1850 50  0001 C CNN
+	1    2800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1200 2800 1250
+Wire Wire Line
+	2800 1400 2700 1400
+Wire Wire Line
+	2700 1250 2800 1250
+Connection ~ 2800 1250
+Wire Wire Line
+	2800 1250 2800 1400
+Wire Wire Line
+	2800 1850 2800 1800
+Wire Wire Line
+	2800 1650 2700 1650
+Wire Wire Line
+	2700 1800 2800 1800
+Connection ~ 2800 1800
+Wire Wire Line
+	2800 1800 2800 1650
 $EndSCHEMATC
