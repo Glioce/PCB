@@ -320,7 +320,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 2900 6650 2900
 Wire Wire Line
-	7000 2700 7000 3000
+	7150 2700 7150 3000
 Wire Wire Line
 	7800 2900 7750 2900
 Wire Wire Line
@@ -337,9 +337,9 @@ F 3 "" H 7800 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 2800 6850 2550
+	6900 2800 6900 2550
 Wire Wire Line
-	6850 2550 7950 2550
+	6900 2550 7950 2550
 Wire Wire Line
 	7950 2550 7950 3000
 Wire Wire Line
@@ -491,13 +491,13 @@ MISO
 Text Label 6650 2800 0    50   ~ 0
 MOSI
 Wire Wire Line
-	7000 3000 7250 3000
+	7150 3000 7250 3000
 Wire Wire Line
-	6650 2800 6850 2800
+	6650 2800 6900 2800
 Text Label 6650 2700 0    50   ~ 0
 SCK
 Wire Wire Line
-	6650 2700 7000 2700
+	6650 2700 7150 2700
 $Comp
 L Device:R_Small R2
 U 1 1 62CED22D
@@ -1049,12 +1049,12 @@ Wire Wire Line
 	2200 1500 2200 1650
 Text Label 4850 4900 0    50   ~ 0
 RST
-Text Label 4800 5300 0    50   ~ 0
-A0
+Text Label 4750 5300 0    50   ~ 0
+A4(SDA)
 Text Label 4800 5400 0    50   ~ 0
-Reset
+A3
 Wire Wire Line
-	4800 5300 5050 5300
+	4750 5300 5050 5300
 Wire Wire Line
 	5050 5400 4800 5400
 Wire Wire Line
@@ -1601,11 +1601,27 @@ Wire Wire Line
 Wire Wire Line
 	6650 3800 6750 3800
 Wire Wire Line
-	4850 2100 5050 2100
-Text Label 4850 2100 0    50   ~ 0
-A1
+	4750 2100 5050 2100
+Text Label 4750 2100 0    50   ~ 0
+A5(SCL)
 Wire Wire Line
 	5050 5500 4800 5500
 Text Label 4800 5500 0    50   ~ 0
 A2
+Wire Wire Line
+	5050 5600 4800 5600
+Wire Wire Line
+	5050 5700 4800 5700
+Wire Wire Line
+	5050 5800 4800 5800
+Wire Wire Line
+	5050 5900 4800 5900
+Wire Wire Line
+	5050 6000 4800 6000
+Text Label 4800 5600 0    50   ~ 0
+A1
+Text Label 4800 5700 0    50   ~ 0
+A0
+Text Label 4800 5800 0    50   ~ 0
+Reset
 $EndSCHEMATC
