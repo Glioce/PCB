@@ -134,12 +134,19 @@ int max_v = 200;
 // En el menu se llama velocidad minima
 // Valores entre 0 y 255. Siempre menor a max_v
 // Se necesitan al menos 3V para mover el motor
-// Si la fuente es de 24V, min_v >= 32
+// Si la fuente es de 24V, lo mejor es que min_v >= 32
 int min_v = 50;
 
-// Tiempo abierta
+// Tiempo abierto
 // Cuanto tiempo permanece la puerta abierta una vez que alcanza la open_pos
 float open_t = 3.0; //segundos
+
+// EEPROM
+#include <EEPROM.h>
+int addr_open_pos = 0; //direccion para guardar valor de open_pos
+int addr_max_v = sizeof(open_pos); //direccion para max_v
+int addr_min_v = addr_max_v + sizeof(max_v); //direccion para min_v
+int addr_open_t = addr_min_v + sizeof(min_v); //direccion para open_t
 
 // LCD
 #include <LiquidCrystal.h>
@@ -159,7 +166,7 @@ int key_cont = 0; // contador para activar cambio rapido de valores
 // Menu
 // Existe una "pagina" para cada valor configurable
 int8_t menu = 0;
-int8_t max_menu = 3; // numero de valores configurables -1
+int8_t max_menu = 4; // numero de valores configurables -1
 
 // Frecuencia de eventos
 // Las acciones se realizand con diferente frecuencia para ahorrar tiempo de procesamiento
@@ -169,11 +176,14 @@ uint64_t t_keys = 0; // guarda los millis cuando ocurrio la lectura
 // La LCD se actualiza cuando hay un cambio de valor, pero no más de 10 veces por segundo
 #define INTERVAL_LCD 100
 uint64_t t_lcd = 0; // guarda los millis cuando ocurrio la actualizacion
-bool update_lcd = false; //indica si se debe actualizar
+bool update_lcd = true; //indica si se debe actualizar
 bool update_lcd2 = false; //actualizar solo linea 2
 uint64_t t; // para guardar valor devuelto por millis()
 
 void setup() {
+  eeprom_put(); // USAR SOLO UNA VEZ AQUÍ!
+  eeprom_get(); // obtener valores guardados en EEPROM
+
   // Configurar pines
   pinMode(PIN_RPWM, OUTPUT);
   pinMode(PIN_LPWM, OUTPUT);
@@ -183,6 +193,7 @@ void setup() {
   pinMode(PIN_LIS, INPUT);
   //
   pinMode(PIN_BL, OUTPUT); // LCD back light
+  digitalWrite(PIN_BL, 1); // encender luz
   //
   analogRead(PIN_KEYS); //pinMode(PIN_KEYS, INPUT);
   analogRead(PIN_KEY); //pinMode(PIN_KEY, INPUT);
@@ -204,17 +215,19 @@ void setup() {
 
   // Mensaje inicial
   lcd.begin(16, 2);
-  lcd.print("hello, world!");
+  //lcd.print("hello, world!");
 }
 
 void loop() {
   t = millis(); // tiempo actual
+  bool saved = false; // inidica si se han guardado valores en EEPROM
 
   if (t - t_keys >= INTERVAL_KEYS) {
     t_keys = t; // guardar tiempo
     key_prev = key; // guardar boton anterior
     key = read_buttons(); // leer boton actual
     int delta = 0; // cambio de valor
+    bool sel = false; // select presionado
 
     if (key != B_NONE) {// si boton presionado
       key_cont ++; // incrementar contador
@@ -239,6 +252,9 @@ void loop() {
           case B_DOWN: // abajo, decrementar valor
             delta = -1;
             break;
+          case B_SELECT:
+            sel = true;
+            break;
         }//switch
       }//if
 
@@ -261,6 +277,12 @@ void loop() {
         case 3: //open_t
           open_t  += float(delta) * 0.1;
           if (open_t < 0.0) open_t = 0.0;
+          break;
+        case 4:
+          if (sel) {
+            eeprom_put();
+            saved = true;
+          }
           break;
       }//switch
 
@@ -302,6 +324,15 @@ void loop() {
           lcd.setCursor(0, 1);
           lcd.print(open_t);
           break;
+        case 4: //guardar
+          lcd.print("5. GUARDAR CONF");
+          //         1234567890123456
+          if (saved) {
+            saved = false;
+            lcd.setCursor(0, 1);
+            lcd.print("GUARDADO");
+          }
+          break;
       }
     }
   }
@@ -332,3 +363,19 @@ int read_buttons()
 // Así no hay respuesta cuando se presionan varios botones a la vez
 // Cuando el boton se mantiene presionado, incrementa un contador
 // Si el contador alcanza un valor definido, el valor cambia rapidamente
+
+// Funcion para escribir valores en EEPROM
+void eeprom_put() {
+  EEPROM.put(addr_open_pos, open_pos);
+  EEPROM.put(addr_max_v, max_v);
+  EEPROM.put(addr_min_v, min_v);
+  EEPROM.put(addr_open_t, open_t);
+}
+
+// Funcion para leer valores de EEPROM
+void eeprom_get() {
+  EEPROM.get(addr_open_pos, open_pos);
+  EEPROM.get(addr_max_v, max_v);
+  EEPROM.get(addr_min_v, min_v);
+  EEPROM.get(addr_open_t, open_t);
+}
