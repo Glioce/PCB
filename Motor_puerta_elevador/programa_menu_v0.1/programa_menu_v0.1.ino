@@ -147,6 +147,7 @@ int addr_open_pos = 0; //direccion para guardar valor de open_pos
 int addr_max_v = sizeof(open_pos); //direccion para max_v
 int addr_min_v = addr_max_v + sizeof(max_v); //direccion para min_v
 int addr_open_t = addr_min_v + sizeof(min_v); //direccion para open_t
+bool saved = false; // inidica si se han guardado valores en EEPROM
 
 // LCD
 #include <LiquidCrystal.h>
@@ -162,6 +163,7 @@ LiquidCrystal lcd(PIN_RS, PIN_EN, PIN_D4, PIN_D5, PIN_D6, PIN_D7);
 int key; // tecla presionada
 int key_prev; // tecla presionada anteriormente
 int key_cont = 0; // contador para activar cambio rapido de valores
+int key_cont_max = 25; // valor maximo del contador
 
 // Menu
 // Existe una "pagina" para cada valor configurable
@@ -220,7 +222,6 @@ void setup() {
 
 void loop() {
   t = millis(); // tiempo actual
-  bool saved = false; // inidica si se han guardado valores en EEPROM
 
   if (t - t_keys >= INTERVAL_KEYS) {
     t_keys = t; // guardar tiempo
@@ -257,6 +258,14 @@ void loop() {
             break;
         }//switch
       }//if
+      else { //si el boton se ha mantenido presionado, incrementar valor rapido
+        if (key_cont > key_cont_max) {
+          key_cont = key_cont_max;
+          if (key == B_UP) delta = 1;
+          if (key == B_DOWN) delta = -1;
+        }
+        
+      }
 
       // Cambiar valor, dependiendo del menú
       switch (menu) {
@@ -307,13 +316,13 @@ void loop() {
           lcd.print(open_pos);
           break;
         case 1: //max_v
-          lcd.print("2. MAX VELOCIDAD");
+          lcd.print("2. VELOCIDAD MAX");
           //         1234567890123456
           lcd.setCursor(0, 1);
           lcd.print(max_v);
           break;
         case 2: //min_v
-          lcd.print("3. MIN VELOCIDAD");
+          lcd.print("3. VELOCIDAD MIN");
           //         1234567890123456
           lcd.setCursor(0, 1);
           lcd.print(min_v);
