@@ -9,6 +9,7 @@
 // 3 pinouts (elegir uno)
 
 // Pinout "Arduino Mega"
+/*
 #define PIN_RPWM 11 // right PWM puente H
 #define PIN_LPWM 12 // left PWM puente H
 #define PIN_REN 14 // right enable puente H
@@ -40,6 +41,7 @@
 #define PIN_SEN PIN_IN3 // sensor de obstáculo
 //
 #define PIN_LED 13 // LED opcional
+*/
 
 // Pinout "ATMega2560 AVR"
 /*
@@ -77,7 +79,7 @@
 */
 
 // Pinout "ATMega3250 AVR"
-/*
+
   #define PIN_RPWM 15
   #define PIN_LPWM 16
   #define PIN_REN 20
@@ -109,7 +111,7 @@
   #define PIN_SEN PIN_IN3
   //
   #define PIN_LED 17
-*/
+
 
 // PID
 float kp = 1;
