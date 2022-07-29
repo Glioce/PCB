@@ -128,7 +128,7 @@ int oldOut;
 
 // Posicion de puerta abierta
 // medida con numero de pulsos del encoder
-int32_t open_pos = 1000;
+int32_t open_pos = 3000;
 long act_pos;
 long prev_pos;
 // idealmente la posición debe cambiar entre 0 y open_pos
@@ -215,8 +215,8 @@ float t_open; // para guardar valor devuelto por millis()
 // ------------------------------------------------------------------- setup
 void setup() 
 {
-  eeprom_get(); // obtener valores guardados en EEPROM
   //eeprom_put(); // guardar valores en EEPROM
+  eeprom_get(); // obtener valores guardados en EEPROM
   
   // Configurar pines
   pinMode(PIN_RPWM, OUTPUT);
