@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -347,7 +347,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "RelayHK4100F.kicad_pro",
+    "filename": "Nunchuck_adapter.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -364,7 +364,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
+        "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
@@ -426,7 +426,7 @@
   },
   "sheets": [
     [
-      "f6b2c9e4-7abb-463b-82c4-d4448aa7bbbc",
+      "de70b51f-9372-487a-bdb2-1d94ecf8d18b",
       ""
     ]
   ],

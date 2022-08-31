@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 40,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -62,11 +62,11 @@
       35,
       36
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "80010ff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "Lavadora.kicad_prl",
+    "filename": "Nunchuck_adapter.kicad_prl",
     "version": 3
   },
   "project": {
