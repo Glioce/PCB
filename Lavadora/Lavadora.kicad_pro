@@ -120,12 +120,33 @@
       },
       "track_widths": [
         0.0,
-        1.016
+        0.5,
+        0.8,
+        1.0,
+        1.016,
+        1.5,
+        2.0
       ],
       "via_dimensions": [
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 1.6,
+          "drill": 0.8
+        },
+        {
+          "diameter": 1.8,
+          "drill": 0.9
+        },
+        {
+          "diameter": 2.0,
+          "drill": 1.0
+        },
+        {
+          "diameter": 3.0,
+          "drill": 1.5
         }
       ],
       "zones_allow_external_fillets": false,
@@ -176,7 +197,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Lavadora.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
